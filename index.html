@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="数据分析与建模作品集：广告 A/B 实验、英国电商 RFM、手机电池续航优化。" />
+  <title>Qimin Chen · Data Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="overrides.css" />
+  <link rel="stylesheet" href="portfolio-v2.css" />
+  <link rel="stylesheet" href="mobile-fixes.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="返回首页"><span class="brand-mark">QC</span><span>DATA / MODEL / DECISION</span></a>
+    <nav><a href="#work">项目</a><a href="#about">关于</a><a class="status" href="#about"><i></i> OPEN TO WORK</a></nav>
+  </header>
+
+  <main id="home">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-kicker"><span>01 — 03</span><span>SELECTED WORK · 2025—2026</span></div>
+      <h1 id="hero-title">让数据从<br><em>“发生了什么”</em><br>走向<em>“下一步做什么”</em></h1>
+      <div class="hero-bottom">
+        <p>聚焦实验分析、用户价值与科学建模。<br>用统计证据连接业务问题与可执行决策。</p>
+        <a class="circle-link" href="#work" aria-label="查看项目">↘</a>
+      </div>
+      <div class="hero-orbit" aria-hidden="true"><div></div><span>588K</span><small>EXPERIMENT USERS</small></div>
+    </section>
+
+    <section class="work" id="work">
+      <div class="section-head"><p>SELECTED CASES</p><h2>三个问题，三种<br>数据决策路径。</h2><span>拖动或点击切换</span></div>
+      <div class="carousel" aria-roledescription="carousel">
+        <div class="slides" id="slides">
+          <article class="slide active" data-index="0">
+            <img src="assets/cover-ab.png" alt="广告 A/B 实验数据漏斗抽象可视化" />
+            <div class="shade"></div><div class="slide-no">01 / 03</div>
+            <div class="slide-content"><p>EXPERIMENTATION · 2026.05</p><h3>广告投放 A/B 实验<br>与用户转化分析</h3><div class="slide-meta"><span>588,101 USERS</span><span>+43.1% RELATIVE LIFT</span></div><a href="#project/ab">查看完整案例 <b>↗</b></a></div>
+          </article>
+          <article class="slide" data-index="1">
+            <img src="assets/cover-ecommerce.png" alt="英国电商交易和用户价值抽象可视化" />
+            <div class="shade"></div><div class="slide-no">02 / 03</div>
+            <div class="slide-content"><p>CUSTOMER ANALYTICS · 2026.05</p><h3>英国电商用户行为<br>与用户价值分析</h3><div class="slide-meta"><span>541,909 ROWS</span><span>£8.887M VALID SALES</span></div><a href="#project/ecom">查看完整案例 <b>↗</b></a></div>
+          </article>
+          <article class="slide" data-index="2">
+            <img src="assets/cover-battery.png" alt="手机电池电热耦合与优化抽象可视化" />
+            <div class="shade"></div><div class="slide-no">03 / 03</div>
+            <div class="slide-content"><p>SCIENTIFIC MODELING · 2025.12—2026.02</p><h3>手机电池续航影响因素<br>分析与优化</h3><div class="slide-meta"><span>50K+ RECORDS</span><span>ODE + OPTIMIZATION</span></div><a href="#project/battery">查看完整案例 <b>↗</b></a></div>
+          </article>
+        </div>
+        <div class="carousel-controls"><button id="prev" aria-label="上一张">←</button><div class="progress"><i id="progress"></i></div><button id="next" aria-label="下一张">→</button></div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <p class="eyebrow">APPROACH</p><div><h2>把复杂问题拆成<br>可以验证的假设。</h2><p>从数据质量与指标口径出发，经由探索、统计推断与模型验证，最终落到一个能被业务理解、被复现、也能执行的答案。</p></div>
+      <div class="process"><span>01<br><b>DEFINE</b></span><i></i><span>02<br><b>ANALYZE</b></span><i></i><span>03<br><b>VALIDATE</b></span><i></i><span>04<br><b>ACT</b></span></div>
+    </section>
+  </main>
+
+  <div id="projectView" class="project-view" aria-live="polite"></div>
+  <footer><span>© 2026 QIMIN CHEN</span><span>PYTHON · SQL · STATISTICS · VISUALIZATION</span><a href="#home">BACK TO TOP ↑</a></footer>
+  <script src="app.js"></script>
+</body>
+</html>

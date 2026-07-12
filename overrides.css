@@ -1,0 +1,24 @@
+.case-section > *,
+.case-copy {
+  min-width: 0;
+}
+
+.demo-note {
+  margin: 42px 0 0 !important;
+  color: #747b77 !important;
+  font: 10px/1.7 "DM Mono", monospace !important;
+}
+
+@media (max-width: 520px) {
+  .case-copy,
+  .code-block {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .next-case {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+  }
+}

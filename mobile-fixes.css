@@ -1,0 +1,7 @@
+@media (max-width: 600px) {
+  .project-title h1 {
+    font-size: 40px;
+    line-height: 1.06;
+    letter-spacing: -0.05em;
+  }
+}
